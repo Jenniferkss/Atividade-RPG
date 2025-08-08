@@ -118,6 +118,8 @@ if (dementadoresRestantes >= 2) {
 }
 
 // Capitulo 2: 
+console.log(`CAPÍTULO 2: Floresta Negra`);
+
 console.log(`Nessa nova etapa da missão ${nome} deve enfrentar a sombria floresta negra. No meio de seu caminho ela se depara com um misterioso objeto.`);
 
 let objetoMisterioso = 60; // Objeto recarrega 60 pontos de vida se tocado. 
@@ -132,6 +134,8 @@ if (classe === "Arqueiros") {
 }; 
 
 // Capitulo 3 
+console.log(`CAPÍTULO 3 : Multiverso `);
+
 console.log(`${nome} ao entrar no portal é levada a um multiverso totalmente desconhecido por si, algo como um futuro distante.Ao abrir os olhos ela se depara com um gigante a observando, assustada decide correr mas não consegue, se sente lenta mas avista uma poção ao longe e decide ir até la.`);
 let concluiuMissao = true;
 let poçãoFlash = 50; // Poção Flash custa 50 ouros
