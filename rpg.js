@@ -133,18 +133,21 @@ if (classe === "Arqueiros") {
 
 // Capitulo 3 
 console.log(`${nome} ao entrar no portal é levada a um multiverso totalmente desconhecido por si, algo como um futuro distante.Ao abrir os olhos ela se depara com um gigante a observando, assustada decide correr mas não consegue, se sente lenta mas avista uma poção ao longe e decide ir até la.`);
-
+let concluiuMissao = true;
 let poçãoFlash = 50; // Poção Flash custa 50 ouros
 if (ouroRestante >= 50) {
     ouroRestante -= poçãoFlash;
     console.log(`Ela consegue alcançar a poção e a compra por 50 ouros, ficando então com ${ouroRestante} ouros e conclui a primeira parte da missão.`);
+    concluiuMissao = true;
     console.log(`Missão 2 concluida com sucesso 🎉Avance para proxima fase!`);
     
 }   else {
     console.log(`Ela alcança a poção mas não consegue a comprar ja que não possui ouro sulficiente e terá que voltar ao inicio da missão`);
+    concluiuMissao = false; 
     console.log(`Missão não concluida 😥 Reinicie a fase e tente novamente!`);
     
 };
-
-
-
+ //Epílogo
+if (concluiuMissao === true) {
+    console.log(`${nome} segue para a proxima fase onde finalmente enfrentará o grande Guardião. Será que nossa heroína conseguirá vence-ló?? Agora depende apenas dela.`);
+};
