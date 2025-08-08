@@ -155,3 +155,20 @@ if (ouroRestante >= 50) {
 if (concluiuMissao === true) {
     console.log(`${nome} segue para a proxima fase onde finalmente enfrentará o grande Guardião. Será que nossa heroína conseguirá vence-ló?? Agora depende apenas dela.`);
 };
+
+// Capitulo 1 - nivel 3 
+console.log("CAPÍTULO 4: CATELO ENCANTADO");
+
+console.log(`Para conseguir derrotar o grande Guardião, ${nome} recebeu uma mochila com itens para melhorar sua defesa e seu ataque, além e conhecer aliados para a batalha`);
+
+let mochilaBonus = ["Armadura de diamante","Espada encantada","Poção de recuperação","Poção de lentidão"]; 
+let aliados = ["Peter","Stefan","Bonnie","Conrad","Finnick"];
+let tesouroColetado = [];
+
+console.log(`Já com seus aliados e seus itens de defesa e ataque ${nome} segue para a entrada de um castelo velho. Ao adentrar o castelo ela coleta 2 itens novos para sua mochila bonus`);
+
+let novosItens = ["Arma de fogo","Escudo de diamante"];
+mochilaBonus += novosItens; 
+for (let i = 0; i < mochilaBonus.length; i++) {
+    
+}
