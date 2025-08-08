@@ -112,7 +112,39 @@ if (dementadoresRestantes >= 2) {
      vida -= 50; 
      console.log(`Agora ${nome} deve escolher entre seu ataque surpresa ou enfrentar novamente os dementadores.O que será que ela fará??`);
      
-    console.log(`Ela tenta enfrentá-los novamente, mas os dementadores a ferem, e sua vida cai para ${vida}`);
+    console.log(`Ela tenta enfrentá-los novamente, mas os dementadores a ferem, e sua vida cai para ${vida} mas ela ainda pode seguir com a missão.`);
 }   else {
    console.log(`Todos os dementadores foram derrotados e nossa heroína pode avançar sem sua missão!`);
 }
+
+// Capitulo 2: 
+console.log(`Nessa nova etapa da missão ${nome} deve enfrentar a sombria floresta negra. No meio de seu caminho ela se depara com um misterioso objeto.`);
+
+let objetoMisterioso = 60; // Objeto recarrega 60 pontos de vida se tocado. 
+if (objetoMisterioso >= 60) {
+    vida += objetoMisterioso;
+} console.log(`Ao tocar o objeto ela teve 60 pontos de vida recuperados.EW agora segue em frente em busca do próximo obstaculo. Mais a frente ela encontra um portal e ao se aproximar percebe que é necessario expor sua classe, ja que a entrada é limitada para classes especificas. `);
+
+if (classe === "Arqueiros") {
+    console.log("Surpreendentemente sua classe foi aceita, e ela podera continuar para o proximo desafio.");
+} else {
+   console.log(`Infelizmente sua classe não foi aceita e ela terá que voltar ao inicio da floresta e resolver o misterio escondido.`);
+}; 
+
+// Capitulo 3 
+console.log(`${nome} ao entrar no portal é levada a um multiverso totalmente desconhecido por si, algo como um futuro distante.Ao abrir os olhos ela se depara com um gigante a observando, assustada decide correr mas não consegue, se sente lenta mas avista uma poção ao longe e decide ir até la.`);
+
+let poçãoFlash = 50; // Poção Flash custa 50 ouros
+if (ouroRestante >= 50) {
+    ouroRestante -= poçãoFlash;
+    console.log(`Ela consegue alcançar a poção e a compra por 50 ouros, ficando então com ${ouroRestante} ouros e conclui a primeira parte da missão.`);
+    console.log(`Missão 2 concluida com sucesso 🎉Avance para proxima fase!`);
+    
+}   else {
+    console.log(`Ela alcança a poção mas não consegue a comprar ja que não possui ouro sulficiente e terá que voltar ao inicio da missão`);
+    console.log(`Missão não concluida 😥 Reinicie a fase e tente novamente!`);
+    
+};
+
+
+
