@@ -159,16 +159,26 @@ if (concluiuMissao === true) {
 // Capitulo 1 - nivel 3 
 console.log("CAPÍTULO 4: CATELO ENCANTADO");
 
-console.log(`Para conseguir derrotar o grande Guardião, ${nome} recebeu uma mochila com itens para melhorar sua defesa e seu ataque, além e conhecer aliados para a batalha`);
+console.log(`Para conseguir derrotar o grande Guardião, ${nome} recebeu uma mochila com itens para melhorar sua defesa e seu ataque.Ao entrar no sa,`);
 
 let mochilaBonus = ["Armadura de diamante","Espada encantada","Poção de recuperação","Poção de lentidão"]; 
-let aliados = ["Peter","Stefan","Bonnie","Conrad","Finnick"];
-let tesouroColetado = [];
+let novasSalas = ["Sala do Espectro","Sala das Armadilhas","Sala dos Guerreiros"];
+let novosItens = ["Arma de fogo","Escudo de diamante","e Amuleto da coragem"];
 
-console.log(`Já com seus aliados e seus itens de defesa e ataque ${nome} segue para a entrada de um castelo velho. Ao adentrar o castelo ela coleta 2 itens novos para sua mochila bonus`);
-
-let novosItens = ["Arma de fogo","Escudo de diamante"];
-mochilaBonus += novosItens; 
-for (let i = 0; i < mochilaBonus.length; i++) {
+for (let i = 0; i < novasSalas.length; i++) {
+    console.log(`${nome} entra na ${novasSalas[2]}...`);
+    console.log(`E conquista ${novosItens} ${mochilaBonus.join(",")} na mochila.`);
+    mochilaBonus.push(novosItens[i]);
     
 }
+ 
+let itemPerdido = mochilaBonus.pop();
+console.log(`E então ${nome} saiu da sala e subiu as escadarias do castelo, no meio do caminho percebeu que perdeu o ${itemPerdido} restando em sua mochila ${mochilaBonus}...`);
+
+
+
+
+console.log(`Já com seus novos itens ${nome} segue para o grande salão onde o Guardião a espera, mas ao se aproximar,${nome} fica sem palavras: era Damon, seu antigo amor perdido.Ele revela que assumiu o papel de guardião para protegê-la do verdadeiro mal. Eles trocam olharem cheios de esperança promessas não ditas, sabendo que naquele momento um novo capítulo se inicia, eles agora caminham juntos rumo ao desconhecio.`);
+console.log("FIM!!");
+
+
