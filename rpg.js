@@ -159,26 +159,24 @@ if (concluiuMissao === true) {
 // Capitulo 1 - nivel 3 
 console.log("CAPÍTULO 4: CATELO ENCANTADO");
 
-console.log(`Para conseguir derrotar o grande Guardião, ${nome} recebeu uma mochila com itens para melhorar sua defesa e seu ataque.Ao entrar no sa,`);
+console.log(`Para conseguir derrotar o grande Guardião, ${nome} recebeu uma mochila com itens para melhorar sua defesa e seu ataque, além de conhecer seus aliados para a batalha.`);
 
-let mochilaBonus = ["Armadura de diamante","Espada encantada","Poção de recuperação","Poção de lentidão"]; 
+let mochilaBonus = ["Armadura de diamante","Espada encantada","Poção de recuperação"," e Poção de lentidão"]; 
 let novasSalas = ["Sala do Espectro","Sala das Armadilhas","Sala dos Guerreiros"];
 let novosItens = ["Arma de fogo","Escudo de diamante","e Amuleto da coragem"];
-
+let aliados = ["Stefan","Patrick","Jude","e Caroline"];
 for (let i = 0; i < novasSalas.length; i++) {
-    console.log(`${nome} entra na ${novasSalas[2]}...`);
-    console.log(`E conquista ${novosItens} ${mochilaBonus.join(",")} na mochila.`);
     mochilaBonus.push(novosItens[i]);
-    
 }
+console.log(`${nome} entra na ${novasSalas[2]}...`);
+console.log(`E conquista ${novosItens} ficando então com ${mochilaBonus.join(",")} na mochila.`);
  
 let itemPerdido = mochilaBonus.pop();
 console.log(`E então ${nome} saiu da sala e subiu as escadarias do castelo, no meio do caminho percebeu que perdeu o ${itemPerdido} restando em sua mochila ${mochilaBonus}...`);
 
-
-
-
-console.log(`Já com seus novos itens ${nome} segue para o grande salão onde o Guardião a espera, mas ao se aproximar,${nome} fica sem palavras: era Damon, seu antigo amor perdido.Ele revela que assumiu o papel de guardião para protegê-la do verdadeiro mal. Eles trocam olharem cheios de esperança promessas não ditas, sabendo que naquele momento um novo capítulo se inicia, eles agora caminham juntos rumo ao desconhecio.`);
+for(aliados of aliados);
+console.log(`Já com seus novos itens ${nome} e seus aliados ${aliados} seguem para o grande salão onde o Guardião os espera.`)
+console.log(`Mas ao se aproximarem,${nome} fica sem palavras: era Damon, seu antigo amor perdido.Ele revela que assumiu o papel de guardião para protegê-la do verdadeiro mal. Eles trocam olharem cheios de esperança e promessas não ditas, sabendo que naquele momento um novo capítulo se inicia, eles agora caminham juntos rumo ao desconhecio.`);
 console.log("FIM!!");
 
 
